@@ -1,0 +1,1 @@
+Nombre: producto prueba. Descripcion: Este es un producto prueba. Precio: 200. Código: abc123. Stock: 25

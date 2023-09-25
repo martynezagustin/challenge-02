@@ -1,3 +1,5 @@
+const fs = require("node:fs")
+
 class ProductManager {
     constructor() {
         this.products = []
@@ -12,6 +14,7 @@ class ProductManager {
                 id, title, description, price, thumbnail, code, stock
             }
             this.products.push(product)
+            fs.writeFileSync("./file01.txt", 'Nombre: ' + title + ". Descripcion: " + description + ". Precio: " + price + ". Código: " + code + ". Stock: " + stock)
             return product
         }
     }
